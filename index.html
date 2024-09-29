@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+</head>
+<body>
+    <h2>Create New Task</h2>
+    <form action="create_task.php" method="POST">
+        <label for="title">Task Title:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="description">Task Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+
+        <label for="due_date">Due Date:</label>
+        <input type="date" id="due_date" name="due_date" required><br>
+
+        <input type="submit" value="Create Task">
+    </form>
+
+    <br>
+    <a href="list_tasks.php">View Task List</a>
+</body>
+</html>
